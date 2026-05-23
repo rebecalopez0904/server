@@ -47,16 +47,6 @@ class Pregunta(models.Model):
 	enunciado = models.TextField()
 	figura_correcta_canva = models.CharField(max_length=50, null=True, blank=True)
 	plantilla_url = models.TextField(null=True, blank=True)
-	@property
-    def get_full_plantilla_url(self):
-        if self.plantilla_url:
-            # Si ya es una URL completa (de Cloudinary), la devolvemos tal cual
-            if self.plantilla_url.startswith("http"):
-                return self.plantilla_url
-            # Si solo es el nombre del archivo, le añadimos el prefijo
-            return f"{settings.CLOUDINARY_BASE_URL}{self.plantilla_url}"
-        return None
-	
 	retro_trazado = models.TextField(null=True, blank=True)
 	retro_opciones = models.TextField(null=True, blank=True)
 	usuario_creador = models.ForeignKey(
