@@ -129,7 +129,9 @@ class PreguntaSerializer(serializers.ModelSerializer):
 		for option in options_payload:
 			Opcion.objects.create(pregunta=pregunta, **option)
 		return pregunta
-
+		
+	full_plantilla_url = serializers.ReadOnlyField(source='get_full_plantilla_url')
+	
 	class Meta:
 		model = Pregunta
 		fields = "__all__"
