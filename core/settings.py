@@ -177,7 +177,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-CLOUDINARY_BASE_URL = "https://res.cloudinary.com/div62hufc/image/upload/"
+CLOUDINARY_BASE_URL = "https://res.cloudinary.com/div62hufc/image/upload/media/"
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
