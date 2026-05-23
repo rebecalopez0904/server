@@ -52,15 +52,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+	'cloudinary_storage', # El almacenamiento de Cloudinary debe ir aquí
+    'django.contrib.staticfiles', # Django ya lo maneja internamente
+    'cloudinary',
+
     # ... apps de django ...
     'rest_framework',
     'corsheaders',  # Importante para que React se comunique con Django
     'api',          # Nuestra app que crearemos a continuación
-	
-
-    'cloudinary_storage',
-    'django.contrib.staticfiles',
-    'cloudinary',
 ]
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
