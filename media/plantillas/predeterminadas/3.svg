@@ -1,0 +1,12 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="600" height="400" fill="white"/>
+<rect x="405.5" y="321.5" width="122" height="63" fill="#FF00B7" fill-opacity="0.2" stroke="#BABABA" stroke-width="3" stroke-dasharray="10 10"/>
+<rect x="390.5" y="304.5" width="152" height="14" fill="#FF00B7" fill-opacity="0.2" stroke="#BABABA" stroke-width="3" stroke-dasharray="10 10"/>
+<rect x="459.5" y="209.5" width="14" height="92" fill="#77FF00" fill-opacity="0.2" stroke="#BABABA" stroke-width="3" stroke-dasharray="10 10"/>
+<circle cx="466.5" cy="173.5" r="33" fill="#FF7B00" fill-opacity="0.2" stroke="#BABABA" stroke-width="3" stroke-dasharray="10 10"/>
+<circle cx="529.5" cy="110.5" r="33" fill="#FF7B00" fill-opacity="0.2" stroke="#BABABA" stroke-width="3" stroke-dasharray="10 10"/>
+<circle cx="466.5" cy="48.5" r="33" fill="#FF7B00" fill-opacity="0.2" stroke="#BABABA" stroke-width="3" stroke-dasharray="10 10"/>
+<circle cx="404.5" cy="110.5" r="33" fill="#FF7B00" fill-opacity="0.2" stroke="#BABABA" stroke-width="3" stroke-dasharray="10 10"/>
+<rect x="440.5" y="84.5" width="53" height="53" fill="#C4FF00" fill-opacity="0.2" stroke="#BABABA" stroke-width="3" stroke-dasharray="10 10"/>
+<path d="M506.952 250.487L507.221 251.963L498.318 253.586L498.049 252.11L489.146 253.733L489.415 255.208L480.513 256.831L480.244 255.355L479.526 255.485L479.887 254.998L478.682 254.105L483.923 247.03L485.129 247.923L490.37 240.849L489.164 239.956L494.406 232.881L495.611 233.774L500.852 226.699L499.647 225.806L504.888 218.732L506.094 219.624L506.455 219.137L506.539 219.862L508.029 219.689L509.07 228.678L507.58 228.85L508.621 237.84L510.111 237.668L511.152 246.657L509.662 246.829L510.021 249.928L506.952 250.487Z" fill="#77FF00" fill-opacity="0.2" stroke="#BABABA" stroke-width="3" stroke-dasharray="10 10"/>
+</svg>
