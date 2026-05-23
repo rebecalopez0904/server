@@ -45,16 +45,15 @@ CSRF_TRUSTED_ORIGINS = ['https://*.up.railway.app']
 # Application definition
 
 INSTALLED_APPS = [
+	'cloudinary_storage', 
+    'django.contrib.staticfiles',
+    'cloudinary',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-	'cloudinary_storage', # El almacenamiento de Cloudinary debe ir aquí
-    'django.contrib.staticfiles', # Django ya lo maneja internamente
-    'cloudinary',
 
     # ... apps de django ...
     'rest_framework',
