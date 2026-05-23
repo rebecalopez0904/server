@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 import os
 from dotenv import load_dotenv
 from pathlib import Path
+import dj_database_url
 import cloudinary
 
 cloudinary.config(url=os.environ.get('CLOUDINARY_URL'))
