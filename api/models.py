@@ -48,14 +48,14 @@ class Pregunta(models.Model):
 	figura_correcta_canva = models.CharField(max_length=50, null=True, blank=True)
 	plantilla_url = models.TextField(null=True, blank=True)
 	@property
-    def get_full_plantilla_url(self):
-        if self.plantilla_url:
+	def get_full_plantilla_url(self):
+		if self.plantilla_url:
             # Si el campo ya tiene un link completo (http...), lo devuelve tal cual
-            if self.plantilla_url.startswith("http"):
-                return self.plantilla_url
+			if self.plantilla_url.startswith("http"):
+				return self.plantilla_url
             # Si solo tiene el nombre, le pega la variable global de Cloudinary
-            return f"{settings.CLOUDINARY_BASE_URL}{self.plantilla_url}"
-        return None
+			return f"{settings.CLOUDINARY_BASE_URL}{self.plantilla_url}"
+		return None
 	
 	retro_trazado = models.TextField(null=True, blank=True)
 	retro_opciones = models.TextField(null=True, blank=True)
