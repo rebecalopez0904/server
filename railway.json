@@ -1,0 +1,8 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "deploy": {
+    "numReplicas": 1,
+    "startCommand": "python manage.py migrate && gunicorn core.wsgi --log-file -",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
