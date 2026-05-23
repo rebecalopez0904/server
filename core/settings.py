@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 import os
 from dotenv import load_dotenv
 from pathlib import Path
+import cloudinary
+
+cloudinary.config(url=os.environ.get('CLOUDINARY_URL'))
 
 
 def _get_bool_env(name, default=False):
@@ -51,7 +54,14 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',  # Importante para que React se comunique con Django
     'api',          # Nuestra app que crearemos a continuación
+	
+
+    'cloudinary_storage',
+    'django.contrib.staticfiles',
+    'cloudinary',
 ]
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware', # <--- Agregar AL PRINCIPIO
